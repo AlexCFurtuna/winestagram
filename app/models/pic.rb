@@ -1,0 +1,3 @@
+class Pic < ApplicationRecord
+  
+end
