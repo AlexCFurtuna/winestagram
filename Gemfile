@@ -27,7 +27,7 @@ gem 'simple_form', '~> 4.0', '>= 4.0.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.5'
 gem 'paperclip', '~> 6.1'
-gem 'masonry-rails', '~> 0.2.4'
+gem 'masonry-rails'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'acts_as_votable', '~> 0.11.1'
 # Use Redis adapter to run Action Cable in production
