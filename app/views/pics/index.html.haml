@@ -2,5 +2,13 @@
   #pics.transitions-enabled
     - @pics.each do |pic|
       .box.panel.panel-default
-        = link_to (image_tag pic.image.url(:medium)), pic
-        %h2= link_to pic.title, pic
+        = link_to (image_tag pic.image.url), pic
+        %h5= link_to pic.title, pic
+        %p= pic.description
+        %p.user
+          Pic by
+          = pic.user.email
+          = link_to like_pic_path(pic), method: :put, class: "btn btn-default" do
+            %span.glyphicon.glyphicon-thumbs-up
+            = pic.get_upvotes.size
+      

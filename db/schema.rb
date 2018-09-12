@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2018_09_11_102501) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "pics", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -37,7 +40,7 @@ ActiveRecord::Schema.define(version: 2018_09_11_102501) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  create_table "votes", force: :cascade do |t|
+  create_table "votes", id: :serial, force: :cascade do |t|
     t.string "votable_type"
     t.integer "votable_id"
     t.string "voter_type"
