@@ -15,3 +15,34 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+body {
+  background-image: url("/assets/vineyard-one");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+nav {
+  border-radius: 0!important;
+
+  div.container {
+    border-radius: 0!important;
+    width: 100%;
+
+    div.navbar-brand {
+      margin-left: 50px!important;
+
+      a {
+        color: white;
+        font-size: 24px;
+      }
+    }
+    .navbar-right {
+      margin-right: 50px!important;
+      a {
+        color: white;
+        font-size: 18px;
+        font-weight: lighter;
+      }
+    }
+  }
+}

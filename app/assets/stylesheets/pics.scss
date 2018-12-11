@@ -2,7 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #pics {
-  background: #FFF;
+  margin: 0 auto;
+  background: transparent;
   padding: 5px;
   border-radius: 5px;
   clear: both;
@@ -10,15 +11,29 @@
      -moz-border-radius: 5px;
           border-radius: 5px;
           text-align: center;
+          div h5 a {
+            color: #333;
+            font-size: 18px;
+            border-top: 1px solid #333;
+            width: 100%;
+            padding-top: 10px;
+          }
+          p {
+            padding-top: 10px;
+            font-size: 14px;
+            border-top: 1px solid #333;
+          }
   .box {
-      margin: 10px auto;
+      padding-top: 15px;
+      margin: 15px;
       width: 500px;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
       border-radius: 7px;
       text-align: center;
       img {
-        max-width: 100%;
+        max-width: 70%;
         height: auto;
+        padding-bottom: 10px;
       }
     }
   }
