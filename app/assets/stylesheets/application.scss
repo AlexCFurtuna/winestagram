@@ -20,10 +20,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  footer {
+    position: fixed;
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+}
 }
 nav {
   border-radius: 0!important;
-
   div.container {
     border-radius: 0!important;
     width: 100%;
@@ -34,6 +43,11 @@ nav {
       a {
         color: white;
         font-size: 24px;
+        font-weight: lighter;
+        text-decoration: none;
+      }
+      a:hover {
+        font-weight: normal;
       }
     }
     .navbar-right {
@@ -42,6 +56,24 @@ nav {
         color: white;
         font-size: 18px;
         font-weight: lighter;
+      }
+      a:hover {
+        color: #FF7F5F;
+      }
+    }
+    .navbar-brand.center {
+      margin-left: 10px!important;
+      a {
+        font-weight: lighter;
+        color: #FF7F5F;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px #FF7F5F solid;
+      }
+      a:hover {
+        font-size: 24px;
+        background-color: #FF7F5F;
+        color: black;
       }
     }
   }
