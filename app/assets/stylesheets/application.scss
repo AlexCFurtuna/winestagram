@@ -40,25 +40,11 @@ nav {
     div.navbar-brand {
       margin-left: 50px!important;
 
-      @-webkit-keyframes example {
-        from {color: white;}
-        to {color: #db36a4;}
-      }
-
-      /* Standard syntax */
-      @keyframes example {
-        from {color: white;}
-        to {color: #db36a4;}
-      }
       a {
         color: white;
         font-size: 24px;
-        font-weight: normal;
+        font-weight: lighter;
         text-decoration: none;
-        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-        animation-name: example;
-        animation-duration: 2s;
       }
       a:hover {
         font-weight: normal;
@@ -72,11 +58,7 @@ nav {
       a {
         color: white;
         font-size: 18px;
-        font-weight: normal;
-        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-        animation-name: example;
-        animation-duration: 2s;
+        font-weight: lighter;
       }
       a:hover {
         color: #FF7F5F;
