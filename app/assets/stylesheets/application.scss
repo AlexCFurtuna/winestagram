@@ -40,14 +40,31 @@ nav {
     div.navbar-brand {
       margin-left: 50px!important;
 
+      @-webkit-keyframes example {
+        from {color: white;}
+        to {color: #db36a4;}
+      }
+
+      /* Standard syntax */
+      @keyframes example {
+        from {color: white;}
+        to {color: #db36a4;}
+      }
       a {
         color: white;
         font-size: 24px;
-        font-weight: lighter;
+        font-weight: normal;
         text-decoration: none;
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 2s;
       }
       a:hover {
         font-weight: normal;
+        font-weight: lighter;
+        transition: .2s linear;
+        -webkit-transition: .2s linear;
       }
     }
     .navbar-right {
@@ -55,7 +72,11 @@ nav {
       a {
         color: white;
         font-size: 18px;
-        font-weight: lighter;
+        font-weight: normal;
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 2s;
       }
       a:hover {
         color: #FF7F5F;
@@ -74,6 +95,9 @@ nav {
         font-size: 24px;
         background-color: #FF7F5F;
         color: black;
+        transition: linear .2s;
+        -webkit-transition: linear .2s;
+        font-weight: lighter;
       }
     }
   }
