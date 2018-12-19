@@ -16,7 +16,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 body {
-  background-image: url("/assets/vineyard-one");
+  background-image: image-url("vineyard-one");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
