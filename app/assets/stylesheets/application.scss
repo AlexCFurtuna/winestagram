@@ -15,11 +15,15 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
 body {
-  background-image: image-url("vineyard-one");
-  background-size: cover;
+  background-image: image-url("vineyard-two");
+  background-size: cover!important;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: black!important;
+
   footer {
     position: fixed;
     height: 30px;
@@ -33,7 +37,7 @@ body {
 }
 nav {
   border-radius: 0!important;
-  div.container {
+  div.container{
     border-radius: 0!important;
     width: 100%;
 

@@ -8,20 +8,27 @@
         %p= @pic.description
       .panel-footer
         .row
-          .col-md-6
+          .col-md-12
             %p.user
               Pic by
               = @pic.user.email
 
-          .col-md-6
+          .col-md-12
             .btn-group-pull-right
               = link_to like_pic_path(@pic), method: :put, class: "btn btn-default" do
                 %span.glyphicon.glyphicon-thumbs-up
                 = @pic.get_upvotes.size
-
               -if user_signed_in?
                 =link_to "Edit", edit_pic_path, class: "btn btn-info"
                 =link_to "Delete", pic_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger"
                 =link_to "Back", root_path, class: "btn btn-primary"
               -else
                 =link_to "Back", root_path, class: "btn btn-primary"
+          #comments.col-md-12
+            %h3 Comments
+            = form_for [@pic, Comment.new] do |f|
+              = f.text_area :body, placeholder: "Add a comment", class: "form-group"
+              %br/
+              = f.submit "Add Comment", class: "btn btn-warning"
+            %ul.list-unstyled
+              = render(partial: 'comments/comment', collection: @pic.comments)

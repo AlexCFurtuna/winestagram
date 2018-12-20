@@ -22,13 +22,18 @@
             font-size: 14px;
             border-top: 1px solid #333;
           }
+          small {
+            font-size: 8px!important;
+          }
   .box {
       padding: 15px;
       margin: 15px;
       width: 400px;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+      border: 1px solid black;
       border-radius: 7px;
       text-align: center;
+      //background-color: #FF5F6D;
       img {
         max-width: 70%;
         height: auto;
@@ -39,9 +44,13 @@
 
   //show page
   div#pic_show.row {
-    margin-top: 50px;
+    margin: 50px auto 50px auto;
+
 
     a.btn.btn-info {
       margin-left: 3px;
     }
   }
+
+
+// media queries

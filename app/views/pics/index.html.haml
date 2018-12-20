@@ -12,3 +12,6 @@
           = link_to like_pic_path(pic), method: :put, class: "btn btn-default" do
             %span.glyphicon.glyphicon-thumbs-up
             = pic.get_upvotes.size
+        %p
+        %small
+        Submitted #{time_ago_in_words(pic.created_at)} ago

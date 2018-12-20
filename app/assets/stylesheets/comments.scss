@@ -1,0 +1,21 @@
+// Place all the styles related to the Comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#comments.col-md-12 {
+    margin: auto;
+    max-height: 500px;
+    overflow: auto;
+  #comment_body {
+    width: 100%;
+    margin-top: 10px;
+
+  }
+  li small.col-md-12 {
+    padding: 0;
+    color: orange;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 5px;
+  }
+}

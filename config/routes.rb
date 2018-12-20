@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
+  root "pics#index"
+
   devise_for :users
   resources :pics do
+    resources :comments
     member do
       put "like", to: "pics#upvote"
     end
+    resources :comments do
+      resources :comments
+    end
   end
-
-  root "pics#index"
 end
