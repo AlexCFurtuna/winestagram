@@ -8,7 +8,7 @@
 %body
   %nav.navbar.navbar-inverse
     .container
-      .navbar-brand= link_to "WineStagram", root_path
+      .navbar-brand= link_to "WineStagram", pics_path
       - if user_signed_in?
         .navbar-brand.center= link_to "Wine it!" , new_pic_path
         %ul.nav.navbar-nav.navbar-right
